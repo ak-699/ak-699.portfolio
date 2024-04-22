@@ -1,0 +1,89 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: red;
+}
+.container {
+    min-height: 1500px;
+    position: relative;
+    background-color: black;
+}
+.content {
+    padding: 20px 20px 0px;
+}
+
+.margins .horizontal {
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid red;
+}
+.margins .horizontal.left {
+    left: 20px;
+}
+.margins .horizontal.right {
+    right: 20px;
+}
+.margins .vertical {
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid red;
+}
+
+.margins .vertical.top {
+    top: 100px;
+}
+.margins .vertical.bottom {
+    bottom: 300px;
+}
+
+.nav-bar {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: 80px;
+}
+.nav-bar .logo {
+    font-size: 6rem;
+}
+.nav-bar .nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar .nav-items .item {
+    width: 100px;
+    /* border: 2px solid white; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar .nav-items .item a {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid black ;
+}
+.nav-bar .nav-items .item a:hover {
+    border-bottom: 5px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.introduction {
+    height: 500px;
+    border: 2px solid white;
+    display: flex;
+}
+.introduction .my-roles {
+    width: 70%;
+    border: 2px solid green;
+}
