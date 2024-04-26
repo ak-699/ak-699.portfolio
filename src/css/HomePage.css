@@ -4,11 +4,14 @@
     box-sizing: border-box;
     color: red;
 }
+
 .container {
     min-height: 1500px;
     position: relative;
     background-color: black;
+    padding-bottom: 300px;
 }
+
 .content {
     padding: 20px 20px 0px;
 }
@@ -18,12 +21,15 @@
     height: 100%;
     border-left: 1px solid red;
 }
+
 .margins .horizontal.left {
     left: 20px;
 }
+
 .margins .horizontal.right {
     right: 20px;
 }
+
 .margins .vertical {
     position: absolute;
     width: 100%;
@@ -31,34 +37,55 @@
 }
 
 .margins .vertical.top {
-    top: 100px;
+    top: 80px;
 }
+
 .margins .vertical.bottom {
     bottom: 300px;
 }
 
 .nav-bar {
     display: flex;
-    height: 80px;
+    height: 60px;
     justify-content: space-between;
-    align-items: center;
-    /* border: 2px solid white; */
-    height: 80px;
+    align-items: flex-end;
+    /* border: 2px solid green; */
 }
 .nav-bar .logo {
-    font-size: 6rem;
+    /* border: 2px solid white; */
+    height: 100%;
 }
+.nav-bar .logo img {
+    height: 60px;
+    width: 100px;
+}
+
 .nav-bar .nav-items {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    /* border: 2px solid white; */
+    height: 70%;
 }
+
 .nav-bar .nav-items .item {
     width: 100px;
     /* border: 2px solid white; */
-    height: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
+.nav-bar .nav-items .item.contact-me {
+    width: 150px;
+    background-color: red;
+}
+.nav-bar .nav-items .item.contact-me a {
+    border-bottom: 0px;
+    color: black;
+}
+.nav-bar .nav-items .item.contact-me a:hover {
+    border-bottom: 0px;
 }
 .nav-bar .nav-items .item a {
     display: inline-block;
@@ -67,8 +94,9 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    border-bottom: 5px solid black ;
+    border-bottom: 5px solid black;
 }
+
 .nav-bar .nav-items .item a:hover {
     border-bottom: 5px solid red;
 }
@@ -79,11 +107,169 @@ a {
 
 
 .introduction {
-    height: 500px;
-    border: 2px solid white;
+    height: 600px;
+    /* border: 2px solid white; */
     display: flex;
 }
+
 .introduction .my-roles {
     width: 70%;
-    border: 2px solid green;
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.introduction .my-roles div {
+    display: flex;
+    height: 50%;
+}
+.introduction .my-roles div h2:nth-child(1) {
+    width: 45%;
+    border: 2px solid rgb(25, 225, 85);
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.introduction .my-roles div h2:nth-child(1) span {
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+.introduction .my-roles div h2:nth-child(2) {
+    width: 10%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    overflow: hidden;
+}
+.introduction .my-roles div h2:nth-child(3) span {
+    /* border: 2px solid red; */
+    display: inline-block;
+    transform: scale(8,30);
+    transform-origin: top;
+}
+.introduction .my-roles div h2:nth-child(3) {
+    width: 45%;
+    border: 2px solid yellow;
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.introduction .my-roles > h2 {
+    border: 2px solid blue;
+    height: 50%;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.introduction .my-roles > h2 span {
+    /* border: 2px solid red; */
+    display: inline-block;
+    transform: scale(8,30);
+    transform-origin: top;
+}
+.introduction .description {
+    width: 30%;
+}
+.introduction .description div:nth-child(1){
+    height: 60%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content .empty-area {
+    height: 100px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.content .achivements > h2 {
+    padding: 40px 0px 20px;
+    border-left: 2px solid red;
+    border-bottom: 1px solid red;
+    border-bottom-left-radius: 20px;
+}
+.content .achivements .slideshow {
+    height: 400px;
+    border-bottom: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+.content .achivements .slideshow div {
+    width: 400px;
+    background-color: red;
+    margin-right: 20px;
+    height: 80%;
+    overflow: hidden;
+
+}
+
+.content .personal-projects > h2 {
+    padding: 40px 0px 20px;
+    border-left: 2px solid red;
+    border-bottom: 1px solid red;
+    border-bottom-left-radius: 20px;
+    
+}
+.content .personal-projects .project {
+    font-size: 2rem;
+    padding: 50px 0px;
+    border-bottom: 1px solid red;
+}
+
+.content .contact-section {
+    height: 800px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .contact-section h2 {
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid white; */
+    text-align: center;
+    overflow: hidden;
+}
+.content .contact-section h2 span {
+    display: inline-block; /* Display as inline-block to fit the width */
+    line-height: 300px;
+    font-size: 30px;
+    transform: scale(3, calc(300 / 30)); /* Scale the text */
+}
+.content .contact-section p {
+    padding: 30px 100px;
+    /* border-radius: 50%;
+    border: 1px solid red; */
+    text-transform: capitalize;
+}
+span {
+    /* border: 2px solid white; */
+}
+.content .contact-section a {
+    display: inline-block;
+    padding: 25px 80px;
+    background-color: red;
+    color: black;
+    border: 1px solid green;
+    font-size: large;
+}
+
+.content .contact-section a:hover {
+    background-color: white;
+    color: black;
 }
