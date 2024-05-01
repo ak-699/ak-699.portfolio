@@ -1,5 +1,9 @@
 import React from 'react'
 import "../css/HomePage.css"
+import roles from "../images/role.png"
+import cert01 from "../images/cert01.jpg"
+import cert02 from "../images/cert02.jpg"
+import cert03 from "../images/cert03.jpg"
 
 const HomePage = () => {
     return (
@@ -16,6 +20,7 @@ const HomePage = () => {
                     <div className="logo">
                         <img src="./ak-high-resolution-logo-transparent.png" alt="" />
                     </div>
+                    <div className="hamburger">MENU</div>
                     <div className="nav-items">
                         <div className="item"><a href="">Home</a></div>
                         <div className="item"><a href="">About</a></div>
@@ -27,20 +32,14 @@ const HomePage = () => {
 
                 <div className="introduction">
                     <div className="my-roles">
-                        <div>
-                            <h2><span>AWS Cloud</span></h2>
-                            <h2>&</h2>
-                            <h2><span>Fullstack Web</span></h2>
-                        </div>
-                        <h2><span>Developer</span></h2>
+
+                        <img src={roles} alt="hello" />
+
                     </div>
                     <div className="description">
                         <div>
-                            <p>I am Abhishek</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eum est quaerat. Ab quibusdam facilis ex alias laboriosam molestiae nihil, blanditiis voluptatem hic incidunt, porro doloribus, qui temporibus provident optio!</p>
-                        </div>
-                        <div>
-
+                            <p>I am <br />Abhishek Kumar,</p>
+                            <p>I work as an AWS Cloud and Fullstack (MERN) Web Developer, specializing in building scalable cloud solutions and dynamic web applications.</p>
                         </div>
                     </div>
                 </div>
@@ -48,21 +47,27 @@ const HomePage = () => {
                 <div className="empty-area">
 
                 </div>
-                <div className="achivements">
-                    <h2>Achievents and Certs</h2>
-                    <div className="slideshow">
-                        <div className="cert"></div>
-                        <div className="cert"></div>
-                        <div className="cert"></div>
-                        <div className="cert"></div>
-
+                <div className="achivements ">
+                    <h2>Certifications<br />&nbsp;&nbsp;&nbsp;/ Badges</h2>
+                    <div className="slideshow ">
+                        <div className="slides">
+                            <div className="cert">
+                                <img src={cert01} alt="" />
+                            </div>
+                            <div className="cert">
+                                <img src={cert02} alt="" />
+                            </div>
+                            <div className="cert">
+                                <img src={cert03} alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="empty-area">
 
                 </div>
                 <div className="personal-projects">
-                    <h2>Personal Projects</h2>
+                    <h2>Personal <br /> &nbsp;/ Projects</h2>
                     <div className="project-list">
                         <div className="project">Visual Insight Generator</div>
                         <div className="project">Fullstack MERN Blog App</div>
@@ -70,7 +75,7 @@ const HomePage = () => {
 
                     </div>
                 </div>
-                <div className="empty-area">
+                {/* <div className="empty-area">
 
                 </div>
                 <div className="contact-section">
@@ -78,7 +83,7 @@ const HomePage = () => {
                     <h2><span>AMAZING THINGS</span></h2>
                     <p>together</p>
                     <a href="">Contact Me</a>
-                </div>
+                </div> */}
             </div>
         </div>
     )
